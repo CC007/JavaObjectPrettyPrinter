@@ -1,4 +1,4 @@
-# Java Object Pretty Printer
+# Java Object Pretty Printer (JOPP)
 
 Pretty prints a Java-style toString() output like: Person[name=Alice, address=Address[street=Main, city=NY]]
 Handles:
