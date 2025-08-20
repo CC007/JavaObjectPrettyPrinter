@@ -7,8 +7,8 @@ import org.junit.jupiter.api.Test;
 
 class GenericPrettyPrinterTest {
 
-    private Person person = new Person("Bob", 34, new Person("Alice", 30, null));
-    private User user = new User(42, "aiw", person);
+    private static final Person PERSON = new Person("Bob", 34, new Person("Alice", 30, null));
+    private static final User USER = new User(42, "aiw", PERSON);
 
     @Test
     void prettyPrintRecord() {
@@ -113,7 +113,7 @@ class GenericPrettyPrinterTest {
                     mother = null
                   ]
                 ]""",
-                prettyPrint(person)
+                prettyPrint(PERSON)
         );
     }
 
@@ -130,7 +130,7 @@ class GenericPrettyPrinterTest {
                         mother = null
                     ]
                 ]""",
-                prettyPrint(person, 4)
+                prettyPrint(PERSON, 4)
         );
     }
 
@@ -147,7 +147,7 @@ class GenericPrettyPrinterTest {
                 ·  ·  mother = null
                 ·  ]
                 ]""",
-                prettyPrint(person, "·  ")
+                prettyPrint(PERSON, "·  ")
         );
     }
 
@@ -168,7 +168,7 @@ class GenericPrettyPrinterTest {
                     ]
                   ]
                 )""",
-                prettyPrint(user)
+                prettyPrint(USER)
         );
     }
 
