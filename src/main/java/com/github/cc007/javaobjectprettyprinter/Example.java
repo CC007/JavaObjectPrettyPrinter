@@ -7,7 +7,7 @@ import java.util.Arrays;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-class Main {
+class Example {
 
     public static void main(String[] args) {
         var personString = "Person[name=Alice, age=30, bloodtype='A\"\\'', weight=65]";
