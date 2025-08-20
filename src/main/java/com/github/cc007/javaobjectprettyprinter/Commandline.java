@@ -39,12 +39,12 @@ class Commandline {
     @SuppressWarnings("java:S106")
     private static void printUsageAndExit() {
         System.err.println("Usage:");
-        System.err.println("  java -jar jopp-1.0-SNAPSHOT.jar \"<your message>\"");
-        System.err.println("  java -jar jopp-1.0-SNAPSHOT.jar -f <path/to/file>");
+        System.err.println("  java -jar jopp.jar \"<your message>\"");
+        System.err.println("  java -jar jopp.jar -f <path/to/file>");
         System.err.println();
         System.err.println("Examples:");
-        System.err.println("  java -jar jopp-1.0-SNAPSHOT.jar \"Hello, world!\"");
-        System.err.println("  java -jar jopp-1.0-SNAPSHOT.jar -f notes.txt");
+        System.err.println("  java -jar jopp.jar \"Hello, world!\"");
+        System.err.println("  java -jar jopp.jar -f notes.txt");
         System.exit(1);
     }
 

@@ -1,0 +1,22 @@
+#!/bin/bash
+
+JAR_NAME="jopp.jar"
+
+print_usage() {
+    echo "Usage:"
+    echo "  $0 \"<your message>\""
+    echo "  $0 -f <path/to/file>"
+    echo
+    echo "Examples:"
+    echo "  $0 \"Hello, world!\""
+    echo "  $0 -f notes.txt"
+}
+
+# Check if at least 1 argument is provided
+if [ $# -eq 0 ]; then
+    print_usage
+    exit 1
+fi
+
+# Run the JAR
+java -jar "$JAR_NAME" "$@"
